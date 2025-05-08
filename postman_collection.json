@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "e0b5b92d-ce72-483f-84eb-50c2c45079e4",
+		"name": "E-commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44607532"
+	},
+	"item": [
+		{
+			"name": "registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"sthossan@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"name\": \"Tanvir Hossain\",\r\n    \"type\": \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{devUrl}}auth/register",
+					"host": [
+						"{{devUrl}}auth"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"sthossan@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"name\": \"Tanvir Hossain\",\r\n    \"type\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{devUrl}}auth/register",
+							"host": [
+								"{{devUrl}}auth"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "false"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "703"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2bf-pxBPTSBK8Uy1ftG7+hv3R6zOp2A\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 05:16:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userData\": {\n        \"email\": \"sthossan@gmail.com\",\n        \"name\": \"Tanvir Hossain\",\n        \"bio\": \"This is a default bio\",\n        \"avatarUrl\": \"https://example.com/default-avatar.png\",\n        \"isActive\": true,\n        \"updatedDate\": null,\n        \"lastLogin\": \"2025-05-08T05:16:01.080Z\",\n        \"isVerified\": false,\n        \"role\": \"superadmin\",\n        \"_id\": \"681c3e11f27db49b2bde3049\",\n        \"createdDate\": \"2025-05-08T05:16:01.084Z\",\n        \"createdAt\": \"2025-05-08T05:16:01.087Z\",\n        \"updatedAt\": \"2025-05-08T05:16:01.087Z\",\n        \"__v\": 0\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODFjM2UxMWYyN2RiNDliMmJkZTMwNDkiLCJyb2xlIjoic3VwZXJhZG1pbiIsImlhdCI6MTc0NjY4MTM2MSwiZXhwIjoxNzQ2Njg0OTYxLCJhdWQiOiJ3ZWIubmV4aWZ5bWFydC5jb20iLCJpc3MiOiJuZXhpZnltYXJ0LmNvbSJ9.eL6zZ2jubZwq8R8Ej_fXJiXAaQNL8iCrKf3TA4yZiBY\"\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"sthossan@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{devUrl}}auth/login",
+					"host": [
+						"{{devUrl}}auth"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"sthossan@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{devUrl}}auth/login",
+							"host": [
+								"{{devUrl}}auth"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "false"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "774"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"306-KBDoicvV/pP6emVi54vLkLURyaE\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 05:20:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"successCode\": 200,\n    \"message\": \"Login successful\",\n    \"data\": {\n        \"userData\": {\n            \"_id\": \"681c3e11f27db49b2bde3049\",\n            \"email\": \"sthossan@gmail.com\",\n            \"name\": \"Tanvir Hossain\",\n            \"bio\": \"This is a default bio\",\n            \"avatarUrl\": \"https://example.com/default-avatar.png\",\n            \"isActive\": true,\n            \"updatedDate\": null,\n            \"lastLogin\": \"2025-05-08T05:16:01.080Z\",\n            \"isVerified\": false,\n            \"role\": \"superadmin\",\n            \"createdDate\": \"2025-05-08T05:16:01.084Z\",\n            \"createdAt\": \"2025-05-08T05:16:01.087Z\",\n            \"updatedAt\": \"2025-05-08T05:16:01.087Z\",\n            \"__v\": 0\n        },\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODFjM2UxMWYyN2RiNDliMmJkZTMwNDkiLCJyb2xlIjoic3VwZXJhZG1pbiIsImlhdCI6MTc0NjY4MTYyOCwiZXhwIjoxNzQ2Njg1MjI4LCJhdWQiOiJ3ZWIubmV4aWZ5bWFydC5jb20iLCJpc3MiOiJuZXhpZnltYXJ0LmNvbSJ9.pQV4YDRlVe5zmlrS13wod_TG6v0gv3_dZ5Y2ZeQh55g\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "getprofile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{devToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{devUrl}}profile/getprofile",
+					"host": [
+						"{{devUrl}}profile"
+					],
+					"path": [
+						"getprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateprofile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{devToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Syed Tanvir Hossain\",\r\n    \"bio\": \"This is a default bio\",\r\n    \"avatarUrl\": \"https://example.com/default-avatar.png\",\r\n    \"isVerified\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{devUrl}}profile/updateprofile",
+					"host": [
+						"{{devUrl}}profile"
+					],
+					"path": [
+						"updateprofile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
